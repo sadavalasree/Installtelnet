@@ -1,0 +1,8 @@
+---
+- hosts: win
+  gather_facts: no
+  tasks:
+    - name: Install telnet
+      win_feature:
+       name: Telnet-Client
+       state: absent
